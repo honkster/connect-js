@@ -250,7 +250,7 @@ FB.subclass('XFBML.Name', 'XFBML.Element', null,
         name = userInfo.name;
       }
 
-      if (name !== '' && this._possessive) {
+      if (name && this._possessive) {
         name += '\'s';
       }
     }
